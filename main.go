@@ -23,7 +23,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "404 not found.", http.StatusNotFound)
 		return
 	}
-	if r.Method != "GET" { //request e bakar eğer get değil ise alttaki sonucu yapar
+	if r.Method != "GET" { 
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 		return
 	}
